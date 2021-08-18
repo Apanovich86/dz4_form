@@ -1,6 +1,6 @@
 const url = 'http://195.72.146.25/api/v1/cars';
 const saveCar = ({model, price, year}) => {
-    fetch(url, {
+   return fetch(url, {
         method: 'POST',
         body: JSON.stringify({model, price, year}),
         headers: {
