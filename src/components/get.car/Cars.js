@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import {getCars, saveCar} from "../services/car.service";
 import Car from "../car/Car";
-import "./Cars.css"
 
 export default function Cars() {
     let [cars, setCars] = useState([]);

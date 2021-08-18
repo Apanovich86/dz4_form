@@ -7,8 +7,7 @@ const saveCar = ({model, price, year}) => {
             'Content-type': 'application/json; charset=UTF-8',
         },
     })
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((response) => response.json());
 }
 const getCars = () => {
     return fetch(url, {
